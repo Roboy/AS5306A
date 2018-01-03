@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name user)(type KiCad)(uri /home/roboy/workspace/AS5306A/user.pretty)(options "")(descr ""))
+)
