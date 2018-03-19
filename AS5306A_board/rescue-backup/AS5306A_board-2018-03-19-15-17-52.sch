@@ -1,0 +1,149 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:AS5306A
+LIBS:SM06B-SRSS-TB
+LIBS:AS5306A_board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C1
+U 1 1 5A4CFA3F
+P 5090 2285
+F 0 "C1" H 5115 2385 50  0000 L CNN
+F 1 "0.1uF" H 5115 2185 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5128 2135 50  0001 C CNN
+F 3 "" H 5090 2285 50  0000 C CNN
+	1    5090 2285
+	1    0    0    -1  
+$EndComp
+$Comp
+L SM06B-SRSS-TB SM06B1
+U 1 1 5A4D17A8
+P 2395 2800
+F 0 "SM06B1" H 2345 3050 60  0000 C CNN
+F 1 "SM06B-SRSS-TB" H 2395 2250 60  0000 C CNN
+F 2 "user:SM06B-SRSS-TB" H 2395 2800 60  0001 C CNN
+F 3 "" H 2395 2800 60  0000 C CNN
+	1    2395 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L AS5306A AS5306A1
+U 1 1 5A4D2C8F
+P 4200 2500
+F 0 "AS5306A1" H 4270 3240 60  0000 C CNN
+F 1 "AS5306A" H 4260 1730 60  0000 C CNN
+F 2 "sop:TSSOP20" H 4220 2330 60  0001 C CNN
+F 3 "" H 4220 2330 60  0000 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2260 3300 3480
+Wire Wire Line
+	3300 2260 3620 2260
+Wire Wire Line
+	2545 2400 3300 2400
+Wire Wire Line
+	3300 2670 3620 2670
+Connection ~ 3300 2400
+$Comp
+L GND #PWR01
+U 1 1 5A4D3244
+P 5300 2075
+F 0 "#PWR01" H 5300 1825 50  0001 C CNN
+F 1 "GND" H 5300 1925 50  0000 C CNN
+F 2 "" H 5300 2075 50  0000 C CNN
+F 3 "" H 5300 2075 50  0000 C CNN
+	1    5300 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4820 2070 5600 2070
+Wire Wire Line
+	5300 1880 5300 2075
+Wire Wire Line
+	3620 2060 3620 1880
+Wire Wire Line
+	3080 1880 5300 1880
+Connection ~ 5300 2070
+NoConn ~ 3620 2570
+Wire Wire Line
+	3620 2160 3005 2160
+Wire Wire Line
+	3005 2160 3005 2800
+Wire Wire Line
+	3005 2800 2545 2800
+Wire Wire Line
+	3620 2360 2905 2360
+Wire Wire Line
+	2905 2360 2905 2700
+Wire Wire Line
+	2905 2700 2545 2700
+Wire Wire Line
+	3620 2770 3145 2770
+Wire Wire Line
+	3145 2770 3145 2500
+Wire Wire Line
+	3145 2500 2545 2500
+Wire Wire Line
+	2545 2900 3080 2900
+Wire Wire Line
+	3080 2900 3080 1880
+Connection ~ 3620 1880
+Wire Wire Line
+	4820 2570 5600 2570
+Wire Wire Line
+	5600 2570 5600 2070
+Wire Wire Line
+	4820 2470 5090 2470
+Wire Wire Line
+	5090 2435 5090 3480
+Wire Wire Line
+	5090 3480 3300 3480
+Connection ~ 3300 2670
+Connection ~ 5090 2470
+Wire Wire Line
+	5090 2135 5090 2070
+Connection ~ 5090 2070
+$EndSCHEMATC

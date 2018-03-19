@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 74xx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/74xx.lib)(options "")(descr ""))
+  (lib (name AS5306A)(type Legacy)(uri ${KIPRJMOD}/AS5306A.lib)(options "")(descr ""))
+  (lib (name SM06B-SRSS-TB)(type Legacy)(uri ${KIPRJMOD}/SM06B-SRSS-TB.lib)(options "")(descr ""))
+)
